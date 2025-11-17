@@ -1,0 +1,164 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Table Styling (index.php) */
+.main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.main th, .main td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.main th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.main tr:hover {
+    background-color: #e9ecef;
+}
+
+.main td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+/* Action Links (Ubah & Hapus) */
+.main td a {
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[href*="ubah.php"] {
+    background-color: #f0ad4e; /* Oranye */
+}
+a[href*="ubah.php"]:hover {
+    background-color: #ec971f;
+}
+
+a[href*="hapus.php"] {
+    background-color: #d9534f; /* Merah */
+}
+a[href*="hapus.php"]:hover {
+    background-color: #c9302c;
+}
+
+/* Add Button (Tambah Barang) */
+.add-button {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.add-button a {
+    background-color: #28a745; /* Hijau */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-button a:hover {
+    background-color: #218838;
+}
+
+/* Form Styling (tambah.php & ubah.php) */
+.main form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input input[type="text"],
+.input select,
+.input input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input input[type="text"]:focus,
+.input select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Submit Button */
+.submit input {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit input:hover {
+    background-color: #2980b9;
+}
